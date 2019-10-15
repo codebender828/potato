@@ -58,6 +58,11 @@ body {
 
 .potato-editor {
   grid-area: editor;
+  height: calc(100vh - 80px);
+
+  .CodeMirror {
+    height: 100%;
+  }
 }
 
 .pototo-footer {
