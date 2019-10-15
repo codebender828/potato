@@ -1,0 +1,19 @@
+@import "./variables/colors";
+@import "./variables/sizes";
+@import "./variables/border";
+@import "./variables/opacity";
+@import "./variables/radii";
+@import "./variables/shadows";
+@import "./variables/fonts";
+
+// Akkadu Standard Theme Based on @akkadu/genesis
+:root {
+  --primary: var(--blue-400);
+  --secondary: var(--indigo-400);
+  --warning: var(--yellow-400);
+  --success: var(--green-500);
+  --danger: var(--red-400);
+  --dark: var(--gray-800);
+  --info: var(--blue-200);
+  --light: var(--gray-50);
+}

@@ -1,29 +1,66 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <navigation class="potato-navigation" />
+    <sidebar class="potato-sidebar" />
+    <p-footer class="pototo-footer" />
+    <router-view class="potato-editor" />
   </div>
 </template>
 
+<script>
+import Navigation from '@/components/Navigation'
+import Sidebar from '@/components/Sidebar'
+import PFooter from '@/components/Footer'
+
+export default {
+  name: 'PotatoApp',
+  components: {
+    Navigation,
+    Sidebar,
+    PFooter
+  }
+}
+</script>
+
 <style lang="scss">
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  height: 100%;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: var(--blue-700);
+  display: grid;
+  grid-template-areas: 
+    'nav      nav'
+    'sidebar  editor' 
+    'footer   footer' 
+  ;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 30px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+.potato-navigation {
+  grid-area: nav;
+}
+
+.potato-sidebar {
+  grid-area: sidebar;
+}
+
+.potato-editor {
+  grid-area: editor;
+}
+
+.pototo-footer {
+  grid-area: footer;
 }
 </style>
