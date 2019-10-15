@@ -5,14 +5,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
-    data() {
-      return {
-        footerlytics: '100 views'
-      }
-    }
+export default {
+  name: "Footer",
+  data() {
+    return {
+      footerlytics: "100 views"
+    };
   }
+};
 </script>
 
 <style lang="scss" scoped>

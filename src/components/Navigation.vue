@@ -8,9 +8,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Navigation'
-  }
+export default {
+  name: "Navigation"
+};
 </script>
 
 <style lang="scss" scoped>
@@ -40,7 +40,6 @@
     justify-content: center;
     align-items: center;
     font-weight: 300;
-
 
     &:hover {
       background: var(--blue-800);

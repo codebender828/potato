@@ -1,6 +1,10 @@
 <template>
   <div class="potato-sidebar">
-    <button class="sidebar-button" v-for="(option, index) in options" :key="index">
+    <button
+      class="sidebar-button"
+      v-for="(option, index) in options"
+      :key="index"
+    >
       {{ option.name }}
     </button>
   </div>
@@ -8,19 +12,19 @@
 
 <script>
 export default {
-  name: 'PotatoSidebar',
+  name: "PotatoSidebar",
   data() {
     return {
-      greeting: 'Sidebar',
+      greeting: "Sidebar",
       options: [
         {
-          name: 'Javascript'
+          name: "Javascript"
         },
         {
-          name: 'HTML'
+          name: "HTML"
         },
         {
-          name: 'SCSS'
+          name: "SCSS"
         }
       ]
     };
@@ -53,7 +57,6 @@ export default {
     &:hover {
       cursor: pointer;
       background: var(--blue-600);
-
     }
   }
 }

@@ -8,18 +8,18 @@
 </template>
 
 <script>
-import Navigation from '@/components/Navigation'
-import Sidebar from '@/components/Sidebar'
-import PFooter from '@/components/Footer'
+import Navigation from "@/components/Navigation";
+import Sidebar from "@/components/Sidebar";
+import PFooter from "@/components/Footer";
 
 export default {
-  name: 'PotatoApp',
+  name: "PotatoApp",
   components: {
     Navigation,
     Sidebar,
     PFooter
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -37,11 +37,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--blue-700);
   display: grid;
-  grid-template-areas: 
-    'nav      nav'
-    'sidebar  editor' 
-    'footer   footer' 
-  ;
+  grid-template-areas:
+    "nav      nav"
+    "sidebar  editor"
+    "footer   footer";
   grid-template-columns: 200px 1fr;
   grid-template-rows: 50px 1fr 30px;
   grid-column-gap: 0px;
