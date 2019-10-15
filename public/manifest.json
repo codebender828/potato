@@ -1,6 +1,6 @@
 {
-  "name": "potato",
-  "short_name": "potato",
+  "name": "🥔 Potato Editor",
+  "short_name": "Potato",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "background_color": "#afd0ff",
+  "theme_color": "#001d51"
 }
