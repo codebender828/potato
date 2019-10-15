@@ -1,34 +1,12 @@
-# potato
+<br />
+<h1 align="center">🥔 Potato Editor</h1>
+<h4 align="center">A simple browser code editor I made for personal use.</h4>
 
-## Project setup
-```
-yarn install
-```
+#### Project TODO:
+- [x] Create layouts for code editor
+- [ ] Setup deployments to netlify
+- [ ] Use styled components
+- [ ] Setup editor with code mirror
+- [ ] Syntax highlighting
+- [ ] Accessibility (Focus) Styling
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
